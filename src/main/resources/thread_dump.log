@@ -1,0 +1,466 @@
+Attaching to process ID 3907, please wait...
+Debugger attached successfully.
+Server compiler detected.
+JVM version is 25.302-b08
+Deadlock Detection:
+
+No deadlocks found.
+
+----------------- 3908 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa595bdab47	Unsafe_Park + 0x97
+0x00007fa581018427	* sun.misc.Unsafe.park(boolean, long) bci:0 (Interpreted frame)
+0x00007fa581007ffd	* java.util.concurrent.locks.LockSupport.park(java.lang.Object) bci:14 line:175 (Interpreted frame)
+0x00007fa581007ffd	* java.util.concurrent.locks.AbstractQueuedSynchronizer.parkAndCheckInterrupt() bci:1 line:836 (Interpreted frame)
+0x00007fa5810077d0	* java.util.concurrent.locks.AbstractQueuedSynchronizer.doAcquireSharedInterruptibly(int) bci:72 line:997 (Interpreted frame)
+0x00007fa581007ffd	* java.util.concurrent.locks.AbstractQueuedSynchronizer.acquireSharedInterruptibly(int) bci:24 line:1304 (Interpreted frame)
+0x00007fa581007ffd	* java.util.concurrent.CountDownLatch.await() bci:5 line:231 (Interpreted frame)
+0x00007fa581007ffd	* com.example.playground.classloader.Worker.waitUntilZero() bci:4 line:33 (Interpreted frame)
+0x00007fa581007ffd	* com.example.playground.classloader.House.<init>() bci:40 line:13 (Interpreted frame)
+0x00007fa581007ffd	* com.example.playground.classloader.HouseBuilder.build(java.lang.Boolean) bci:28 line:23 (Interpreted frame)
+0x00007fa5810004e7	<StubRoutines>
+0x00007fa59576deda	_ZN9JavaCalls11call_helperEP9JavaValueP12methodHandleP17JavaCallArgumentsP6Thread + 0xe1a
+0x00007fa595ac45a8	_ZN10Reflection6invokeE19instanceKlassHandle12methodHandle6Handleb14objArrayHandle9BasicTypeS3_bP6Thread + 0xae8
+0x00007fa595ac5f76	_ZN10Reflection13invoke_methodEP7oopDesc6Handle14objArrayHandleP6Thread + 0x126
+0x00007fa595819465	JVM_InvokeMethod + 0x115
+0x00007fa581018427	* sun.reflect.NativeMethodAccessorImpl.invoke0(java.lang.reflect.Method, java.lang.Object, java.lang.Object[]) bci:0 (Interpreted frame)
+0x00007fa581007d80	* sun.reflect.NativeMethodAccessorImpl.invoke(java.lang.Object, java.lang.Object[]) bci:100 line:62 (Interpreted frame)
+0x00007fa581007d80	* sun.reflect.DelegatingMethodAccessorImpl.invoke(java.lang.Object, java.lang.Object[]) bci:6 line:43 (Interpreted frame)
+0x00007fa581007e54	* java.lang.reflect.Method.invoke(java.lang.Object, java.lang.Object[]) bci:56 line:498 (Interpreted frame)
+0x00007fa581007d80	* com.example.playground.classloader.Main.testLockedClassLoader(boolean) bci:98 line:24 (Interpreted frame)
+0x00007fa581007ffd	* com.example.playground.classloader.Main.main(java.lang.String[]) bci:1 line:12 (Interpreted frame)
+0x00007fa5810004e7	<StubRoutines>
+0x00007fa59576deda	_ZN9JavaCalls11call_helperEP9JavaValueP12methodHandleP17JavaCallArgumentsP6Thread + 0xe1a
+0x00007fa5957eed07	_ZL17jni_invoke_staticP7JNIEnv_P9JavaValueP8_jobject11JNICallTypeP10_jmethodIDP18JNI_ArgumentPusherP6Thread.isra.79.constprop.127 + 0x237
+0x00007fa5957f14b1	jni_CallStaticVoidMethod + 0x161
+0x00007fa5966fa890	JavaMain + 0xa70
+----------------- 3910 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3911 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3912 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3913 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3914 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3915 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3916 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3917 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3918 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3919 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3920 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3921 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3922 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3923 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3924 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3925 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3926 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3927 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3928 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3929 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3930 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3931 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3932 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3933 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3934 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3935 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3936 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3937 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3938 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3939 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3940 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa59569d517	_ZN13GCTaskManager8get_taskEj + 0x57
+0x00007fa59569f37b	_ZN12GCTaskThread3runEv + 0x17b
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3941 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa595c1045e	_ZN8VMThread4loopEv + 0x1ce
+0x00007fa595c10a69	_ZN8VMThread3runEv + 0xa9
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3942 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa595a197e5	_ZN13ObjectMonitor4waitElbP6Thread + 0x915
+0x00007fa595b6f7fc	_ZN18ObjectSynchronizer4waitE6HandlelP6Thread + 0x6c
+0x00007fa59580f4d2	JVM_MonitorWait + 0xa2
+0x00007fa581018427	* java.lang.Object.wait(long) bci:0 (Interpreted frame)
+0x00007fa581007ffd	* java.lang.Object.wait() bci:2 line:502 (Interpreted frame)
+0x00007fa581007ffd	* java.lang.ref.Reference.tryHandlePending(boolean) bci:54 line:191 (Interpreted frame)
+0x00007fa5810077d0	* java.lang.ref.Reference$ReferenceHandler.run() bci:1 line:153 (Interpreted frame)
+0x00007fa5810004e7	<StubRoutines>
+0x00007fa59576deda	_ZN9JavaCalls11call_helperEP9JavaValueP12methodHandleP17JavaCallArgumentsP6Thread + 0xe1a
+0x00007fa59576b593	_ZN9JavaCalls12call_virtualEP9JavaValue11KlassHandleP6SymbolS4_P17JavaCallArgumentsP6Thread + 0x263
+0x00007fa59576bb67	_ZN9JavaCalls12call_virtualEP9JavaValue6Handle11KlassHandleP6SymbolS5_P6Thread + 0x57
+0x00007fa59580df3c	_ZL12thread_entryP10JavaThreadP6Thread + 0x6c
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3943 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa595a197e5	_ZN13ObjectMonitor4waitElbP6Thread + 0x915
+0x00007fa595b6f7fc	_ZN18ObjectSynchronizer4waitE6HandlelP6Thread + 0x6c
+0x00007fa59580f4d2	JVM_MonitorWait + 0xa2
+0x00007fa581018427	* java.lang.Object.wait(long) bci:0 (Interpreted frame)
+0x00007fa581007ffd	* java.lang.ref.ReferenceQueue.remove(long) bci:59 line:144 (Interpreted frame)
+0x00007fa581007d80	* java.lang.ref.ReferenceQueue.remove() bci:2 line:165 (Interpreted frame)
+0x00007fa581007d80	* java.lang.ref.Finalizer$FinalizerThread.run() bci:36 line:216 (Interpreted frame)
+0x00007fa5810004e7	<StubRoutines>
+0x00007fa59576deda	_ZN9JavaCalls11call_helperEP9JavaValueP12methodHandleP17JavaCallArgumentsP6Thread + 0xe1a
+0x00007fa59576b593	_ZN9JavaCalls12call_virtualEP9JavaValue11KlassHandleP6SymbolS4_P17JavaCallArgumentsP6Thread + 0x263
+0x00007fa59576bb67	_ZN9JavaCalls12call_virtualEP9JavaValue6Handle11KlassHandleP6SymbolS5_P6Thread + 0x57
+0x00007fa59580df3c	_ZL12thread_entryP10JavaThreadP6Thread + 0x6c
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3944 -----------------
+0x00007fa596917b3b	do_futex_wait.constprop.1 + 0x2b
+----------------- 3945 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3946 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3947 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3948 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3949 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3950 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3951 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3952 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3953 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3954 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3955 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3956 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3957 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3958 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3959 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb07e	_ZN7Monitor4waitEblb + 0x26e
+0x00007fa59555bab2	_ZN12CompileQueue3getEv + 0x152
+0x00007fa59556515b	_ZN13CompileBroker20compiler_thread_loopEv + 0x18b
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3960 -----------------
+0x00007fa596915a35	__pthread_cond_wait + 0xc5
+0x00007fa5959e9ad9	_ZN7Monitor5IWaitEP6Threadl + 0xe9
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa595af0971	_ZN13ServiceThread20service_thread_entryEP10JavaThreadP6Thread + 0x1f1
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3961 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa5959e9bc4	_ZN7Monitor5IWaitEP6Threadl + 0x1d4
+0x00007fa5959eb03a	_ZN7Monitor4waitEblb + 0x22a
+0x00007fa595ba5180	_ZN13WatcherThread3runEv + 0x230
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3962 -----------------
+0x00007fa596915de2	__pthread_cond_timedwait + 0x132
+0x00007fa595a182b1	_ZN13ObjectMonitor6EnterIEP6Thread + 0x1e1
+0x00007fa595a18919	_ZN13ObjectMonitor5enterEP6Thread + 0x209
+0x00007fa595b79a94	_ZN16SystemDictionary30resolve_instance_class_or_nullEP6Symbol6HandleS2_P6Thread + 0x304
+0x00007fa595b7c439	_ZN16SystemDictionary15resolve_or_failEP6Symbol6HandleS2_bP6Thread + 0x49
+0x00007fa5955abbb8	_ZN12ConstantPool13klass_at_implE18constantPoolHandleiP6Thread + 0x328
+0x00007fa59575a0e3	_ZN18InterpreterRuntime4_newEP10JavaThreadP12ConstantPooli + 0xa3
+0x00007fa581025b79	* com.example.playground.classloader.Worker.setOwner() bci:24 line:26 (Interpreted frame)
+0x00007fa581007ffd	* com.example.playground.classloader.Worker.run() bci:25 line:18 (Interpreted frame)
+0x00007fa581008042	* java.lang.Thread.run() bci:11 line:748 (Interpreted frame)
+0x00007fa5810004e7	<StubRoutines>
+0x00007fa59576deda	_ZN9JavaCalls11call_helperEP9JavaValueP12methodHandleP17JavaCallArgumentsP6Thread + 0xe1a
+0x00007fa59576b593	_ZN9JavaCalls12call_virtualEP9JavaValue11KlassHandleP6SymbolS4_P17JavaCallArgumentsP6Thread + 0x263
+0x00007fa59576bb67	_ZN9JavaCalls12call_virtualEP9JavaValue6Handle11KlassHandleP6SymbolS5_P6Thread + 0x57
+0x00007fa59580df3c	_ZL12thread_entryP10JavaThreadP6Thread + 0x6c
+0x00007fa595ba89b7	_ZN10JavaThread17thread_main_innerEv + 0x1c7
+0x00007fa595ba9d0a	_ZN10JavaThread3runEv + 0x2fa
+0x00007fa595a375d2	_ZL10java_startP6Thread + 0x102
+----------------- 3907 -----------------
+0x00007fa596913017	pthread_join + 0xa7
