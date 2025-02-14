@@ -18,7 +18,7 @@ public class Main {
         try {
             // Use MyClassLoader to load HouseBuilder
             Class<?> clazz = Class.forName("com.example.playground.classloader.HouseBuilder", false, mc);
-            Object o = clazz.newInstance();
+            Object o = clazz.getDeclaredConstructor().newInstance();
             System.out.println(o);
             Method m = clazz.getDeclaredMethod("build", Boolean.class);
             m.invoke(o, locked);
